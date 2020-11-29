@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>管理员登录</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/common.css">
     <style>
         body {
@@ -18,15 +18,14 @@
         }
     </style>
 </head>
-
 <body>
     <div class="first_head"><h1 style="text-align:center">预约&管理系统登录</h1></div>
-    <div class="administrator_form">
-        <form action="" method="POST" name="administratorform">
-            <h2>管理员登录</h2>
-            <div class="form_in_administrator">用户名:<input type="text" name="adname"></div>
-            <div class="form_in_administrator">密码:<input type="password" name="adpwd"></div>
-            <div class="submit_a"><input type="submit" value="登录"></div> 
+    <div class="user_form">
+        <form action="/registuser" method="POST" name="userform">
+            <h2>用户注册</h2>
+            <div class="form_in_user">用户名:<input type="text" name="username"></div>
+            <div class="form_in_user">密码:<input type="password" name="userpwd"></div>
+            <div class="submit_u"><input type="submit" value="注册"></div> 
         </form>
     </div>
     <script>

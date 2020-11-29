@@ -22,16 +22,20 @@
 <body>
     <div class="first_head"><h1 style="text-align:center">预约&管理系统登录</h1></div>
     <div class="user_form">
-        <form action="" method="POST" name="userform">
+        <form action="/login" method="POST" name="userform">
             <h2>用户登录</h2>
             <div class="form_in_user">用户名:<input type="text" name="username"></div>
             <div class="form_in_user">密码:<input type="password" name="userpwd"></div>
-            <div class="submit_u"><input type="submit" value="确认"></div> 
+            <div class="submit_u"><input type="submit" value="登录"></div> 
         </form>
+        <button onclick="jump()">注册</button>
     </div>
     <script>
         if ( window.history.replaceState ) {
             window.history.replaceState( null, null, window.location.href );
+        }
+        function jump() {
+            window.location.href="regist.html";
         }
     </script> 
 </body>
