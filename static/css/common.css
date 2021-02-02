@@ -1,0 +1,61 @@
+body {
+    font-family: STXinwei;
+}
+a {
+    text-decoration: none;
+}
+.select {
+    background: rgb(241, 154, 230);
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    position: absolute;
+    left: 37%;
+    top: 30%;
+  }
+ul,ol {
+    list-style: none;
+}
+.bt_1,.bt_2 {
+    background-color: aqua;
+    width: 200px;
+    border-radius: 10px;
+}
+.first_head {
+    background-color: rgb(241, 154, 230);
+    border-radius: 10px;
+    width: 300px;
+}
+.user_form,.administrator_form {
+    background-color: rgb(241, 154, 230);
+    width: 500px;
+    height: 400px;
+    border-radius: 25px;
+    position: absolute;
+    left: 37%;
+    top: 30%;
+    opacity: 80%;
+}
+.form_in_user,.form_in_administrator {
+    margin: 30px;
+}
+input[type=text],input[type=password] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+input[type=submit]:hover {
+    background-color: #45a049;
+  }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-han">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户登录</title>
+    <link rel="stylesheet" href="../static/css/common.css">
+    <style>
+        body {
+            background-image:url({{ url_for('static', filename='image/background2.jpg') }});
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        h2 {
+            background-color: azure;
+            position: relative;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first_head"><h1 style="text-align:center">预约&管理系统登录</h1></div>
+     <form method="post" action='/login'>
+        <label>用户名：<input type="text" name="username" value=""></label><br>
+        <label>密码：<input type="password" name="password" value=""></label><br>
+        <input type="submit" value="登录">
+    </form>
+    <p><a href="{{ url_for('regist') }}">注册</a></p>
+    {% if error %}
+        <p>{{error}}</p>
+    {% endif %}
+    <script>
+        {% if user %} ( window.history.replaceState ) {
+            window.history.replaceState( null, null, window.location.href );
+        }
+        {% else %}
+        function jump() {
+            window.location.href="regist.html";
+        }
+        {% endif %}
+    </script>
+</body>
+</html>

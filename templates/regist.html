@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+    <style>
+        body {
+            background-image: url('image/background2.jpg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        h2 {
+            background-color: azure;
+            position: relative;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="first_head"><h1 style="text-align:center">预约&管理系统登录</h1></div>
+        <form method="post" action='/regist'>
+        <label>用户名：<input type="text" name="username" value=""></label></br>
+        <label>密码：<input type="password" name="password1" value=""></label></br>
+        <label>重复密码：<input type="password" name="password2" value=""></label></br>
+        <label>邮箱：<input type="email" name="email" value=""></label></br>
+        <input type="submit" value="注册">
+        </form>
+
+    {% if error %}
+        <p>{{error}}</p>
+    {% endif %}
+
+    <script>
+        if ( window.history.replaceState ) {
+            window.history.replaceState( null, null, window.location.href );
+        }
+    </script>
+</body>
+</html>

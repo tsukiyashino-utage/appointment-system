@@ -1,0 +1,79 @@
+<!-- templates/panel.html -->
+
+<DOCTYPE html>
+<html lang="zh-han">
+    <head>
+        <title>个人中心</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../static/css/common.css" rel="stylesheet">
+    </head>
+    <body>
+        <h3>个人中心</h3>
+        <p>姓名：{{user.username}}</p>
+        <p>邮箱：{{user.email}}</p>
+        <p>预约日期：{{user.year, user.month, user.day,}}</p>
+
+        <p>添加预约:
+        姓名：<input type="text" style="width: auto;" id="name"><br>
+            <select id="year">
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            </select>年
+            <select id="month">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            </select>月
+            <select id="day">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+            </select>日
+            <button id="add-user">确定</button>
+        </p>
+
+        <ul id="users"></ul>
+
+        <button onclick="jump()">登出</button>
+    <script src="./static/jquery-3.5.1/jquery-3.5.1.js"></script>
+    <script src="./static/js/user.js"></script>
+    </body>
+</html>
